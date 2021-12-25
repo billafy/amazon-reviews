@@ -1,0 +1,58 @@
+.arv-container {
+	.arv-header {
+		padding: 0.5rem;
+		text-align: center;	
+		h1 {
+			font-family: 'Farro';
+			font-weight: normal;
+		}
+	}
+	.arv-main {
+		.search-bar {
+			display: grid;
+			grid-template-columns: auto 50px;
+			align-items: center;
+			width: 800px;
+			max-width: 90%;
+			height: 60px;
+			margin: 1rem auto;
+			padding: 0.5rem;
+			gap: 0.5rem;
+			background: #F5FFFA;
+			transition: 1s all ease;
+			box-shadow: 0px 0px 3px #1a1b1c;
+			border: 1px solid #1A1B1C;
+			input, button {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 40px;
+				padding: 0px 0.5rem;
+				font-size: 1rem;
+			}
+			button {
+				background: gold;
+				transition: 0.3s all ease;
+				&:hover {
+					transform: scale(1.1);
+				}
+			}
+			&:hover {
+				box-shadow: 0px 0px 3px #1A1B1C;
+			}
+		}
+		.loading {
+			margin: 3rem auto;
+			width: 80px;
+			height: 80px;
+			border: 5px solid #da9100;
+			border-left-color: transparent;
+			border-top-color: transparent;
+			border-radius: 50%;
+			animation: spin 1s linear infinite;
+		}
+		@keyframes spin {
+			to {transform: rotate(360deg);}
+		}
+	}
+}

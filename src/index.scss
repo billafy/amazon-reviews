@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Farro:wght@300;400;500&display=swap');
+* {
+	box-sizing: border-box;
+	font-family: 'Farro', 'Roboto', 'Segoe UI', sans-serif;
+}
+body {
+	margin: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background: #F5FFFA;
+}
+p {
+	margin: 0.125rem 0px;
+}
+input, select, button {
+	outline: none;
+	border: 0px;
+	background: transparent;
+}
+@media (max-width: 768px) {
+	html {
+		font-size: 15px;
+	}
+}
+@media (max-width: 368px) {
+	html {
+		font-size: 14px;
+	}
+}
