@@ -1,1 +1,1 @@
-1
+A simple React application to view amazon reviews by entering its URL.

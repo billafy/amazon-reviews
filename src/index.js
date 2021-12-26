@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./index.scss";
-import AmazonReviewViewer from "./AmazonReviewViewer";
+import "./styles/index.scss";
+import AmazonReviewViewer from "./components/AmazonReviewViewer";
 
 ReactDOM.render(
 	<React.StrictMode>

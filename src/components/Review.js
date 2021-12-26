@@ -1,12 +1,12 @@
 import { AiFillStar, AiOutlineStar } from "react-icons/ai";
 import { Markup } from "interweave";
-import "./review.scss";
+import "../styles/review.scss";
 
 const Review = ({ review }) => {
 	return (
 		<div className="review">
 			<div className="customer-info">
-				<div>
+				<div className='avatar'>
 					<img src={review.profilePicture} />
 				</div>
 				<p>{review.customerName}</p>

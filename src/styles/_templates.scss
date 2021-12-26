@@ -1,0 +1,15 @@
+$primary: #F5FFFA;
+$secondary: #FFD300;
+$tertiary: #DA9100;
+$text-1: #1A1B1C;
+$text-2: #708090;
+$filler: #AAB7B8;
+$error: #DC143C;
+@mixin card-border {
+	box-shadow: 0px 0px 3px $text-1;
+	border: 1px solid $text-1;
+	transition: 0.5s all ease;
+	&:hover {
+		box-shadow: 0px 0px 6px $text-1;
+	}
+}

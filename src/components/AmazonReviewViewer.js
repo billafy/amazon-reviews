@@ -1,8 +1,8 @@
 import { useState } from "react";
-import "./style.scss";
+import "../styles/main.scss";
 import { FaSearch } from "react-icons/fa";
 import axios from "axios";
-import { apiUrl, defaultReview } from "./constants";
+import { apiUrl, defaultReview } from "../utils/constants";
 import Review from "./Review";
 
 const AmazonReviewViewer = () => {
@@ -11,7 +11,7 @@ const AmazonReviewViewer = () => {
 	const [loading, setLoading] = useState(false);
 	const [error, setError] = useState("");
 
-	const searchReview2 = async (event) => {
+	const searchReview = async (event) => {
 		event.preventDefault();
 		if (url) {
 			setError("");
@@ -44,7 +44,7 @@ const AmazonReviewViewer = () => {
 						value={url}
 						onChange={({ target: { value } }) => setUrl(value)}
 					/>
-					<button onClick={searchReview2}>
+					<button onClick={searchReview}>
 						<FaSearch />
 					</button>
 				</form>
